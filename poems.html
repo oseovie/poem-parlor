@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Explore the literary collection and emotional rooms of Poem Parlor: Collection I: Things We Carry."
+    />
+    <title>The Collection & Rooms | Poem Parlor</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/poems-data.js"></script>
+    <script src="js/script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-nav">
+      <div class="site-shell">
+        <a class="brand" href="index.html">Poem Parlor</a>
+        <nav aria-label="Main navigation">
+          <ul class="nav-links">
+            <li><a href="index.html">The Parlor</a></li>
+            <li><a href="poems.html#rooms-view" class="active">Explore the Rooms</a></li>
+            <li><a href="poems.html#collection-view">The Collection</a></li>
+            <li><a href="index.html#word-door">Word Door</a></li>
+            <li><a href="gallery.html">The Gallery</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="rooms-page site-shell">
+      <!-- Perspective Switcher: The House vs The Book -->
+      <div class="perspective-nav" role="tablist" aria-label="Discovery perspective">
+        <a
+          href="#rooms-view"
+          class="perspective-tab active"
+          id="tabRooms"
+          role="tab"
+          aria-selected="true"
+          aria-controls="rooms-view"
+        >
+          Wander by Rooms
+        </a>
+        <a
+          href="#collection-view"
+          class="perspective-tab"
+          id="tabCollection"
+          role="tab"
+          aria-selected="false"
+          aria-controls="collection-view"
+        >
+          Collection I: Things We Carry
+        </a>
+      </div>
+
+      <!-- ========================================== -->
+      <!-- VIEW 1: THE EMOTIONAL ROOMS (THE HOUSE)    -->
+      <!-- ========================================== -->
+      <div id="rooms-view" class="perspective-content active" role="tabpanel" aria-labelledby="tabRooms">
+        <div class="section-heading">
+          <span class="kicker">The Emotional Rooms of the Parlor</span>
+          <h2>Each feeling has its own corner of the house.</h2>
+          <p>
+            Wander through the five emotional spaces of Poem Parlor. Each room shelters poems
+            from <em>Collection I: Things We Carry</em> according to their emotional resonance and silence.
+          </p>
+        </div>
+
+        <!-- 1. The Quiet Room -->
+        <section id="quiet-room" class="room-spot quiet">
+          <div class="room-spot-header room-animate">
+            <span class="room-wing-badge">North Wing · Room 01 · Stillness & Solitude</span>
+            <h2>The Quiet Room</h2>
+            <p class="room-vignette">
+              “The curtains are drawn against the evening. Outside, rain touches the glass in whispers;
+              inside, time forgets how to rush.”
+            </p>
+          </div>
+
+          <div class="poem-list">
+            <article class="poem-card room-animate">
+              <span class="label">Section I · No. 01</span>
+              <h3>Lost in Thought</h3>
+              <p>A thought begins quietly. No louder than a drop of rain touching the surface of a lake.</p>
+              <a href="poem.html?id=lost-in-thought&from=room&room=quiet">Read poem →</a>
+            </article>
+
+            <article class="poem-card room-animate">
+              <span class="label">Section I · No. 02</span>
+              <h3>The Man Who Never Complained</h3>
+              <p>Because nobody really knows what to do with pain so I learned to carry mine quietly.</p>
+              <a href="poem.html?id=the-man-who-never-complained&from=room&room=quiet">Read poem →</a>
+            </article>
+
+            <article class="poem-card room-animate">
+              <span class="label">Section I · No. 03</span>
+              <h3>Somewhere Behind His Silence</h3>
+              <p>Somewhere behind his silence, he is still walking away in places no one can see.</p>
+              <a href="poem.html?id=somewhere-behind-his-silence&from=room&room=quiet">Read poem →</a>
+            </article>
+          </div>
+          <div class="room-corridor room-animate">
+            <a href="#memory-room">Continue into The Memory Room <span class="corridor-arrow">→</span></a>
+          </div>
+        </section>
+
+        <!-- 2. The Memory Room -->
+        <section id="memory-room" class="room-spot memory">
+          <div class="room-spot-header room-animate">
+            <span class="room-wing-badge">East Wing · Room 02 · The Archive of Years</span>
+            <h2>The Memory Room</h2>
+            <p class="room-vignette">
+              “Photographs rest in open drawers; the clock ticks like an old companion. Here, what is gone
+              remains forever kept.”
+            </p>
+          </div>
+
+          <div class="poem-list">
+            <article class="poem-card room-animate">
+              <span class="label">Section II · No. 04</span>
+              <h3>The Empty Chair</h3>
+              <p>Some spaces are not made empty by furniture. They are made empty by people.</p>
+              <a href="poem.html?id=the-empty-chair&from=room&room=memory">Read poem →</a>
+            </article>
+
+            <article class="poem-card room-animate">
+              <span class="label">Section II · No. 05</span>
+              <h3>The Picture He Couldn't Call</h3>
+              <p>The number still exists. The memories still exist. The pictures still exist. But the person is gone.</p>
+              <a href="poem.html?id=the-picture-he-couldnt-call&from=room&room=memory">Read poem →</a>
+            </article>
+
+            <article class="poem-card room-animate">
+              <span class="label">Section II · No. 06</span>
+              <h3>Shakespeare and the World</h3>
+              <p>Even when people walk different roads, the moments you shared can still remain a place you both once called home.</p>
+              <a href="poem.html?id=shakespeare-and-the-world&from=room&room=memory">Read poem →</a>
+            </article>
+          </div>
+          <div class="room-corridor room-animate">
+            <a href="#love-room">Continue into The Love Room <span class="corridor-arrow">→</span></a>
+          </div>
+        </section>
+
+        <!-- 3. The Love Room -->
+        <section id="love-room" class="room-spot love">
+          <div class="room-spot-header room-animate">
+            <span class="room-wing-badge">South Chamber · Room 03 · The Hearth of Unsaid Things</span>
+            <h2>The Love Room</h2>
+            <p class="room-vignette">
+              “A single candle flickers beside two tea cups. The warmth here is quiet, patient,
+              and asks for nothing more than honesty.”
+            </p>
+          </div>
+
+          <div class="poem-list">
+            <article class="poem-card room-animate">
+              <span class="label">Section III · No. 08</span>
+              <h3>The Chapter We Couldn't Finish</h3>
+              <p>For some people enter a story not to stay until the final page, but to leave a mark so deep that every page afterward carries a trace of them.</p>
+              <a href="poem.html?id=the-chapter-we-couldnt-finish&from=room&room=love">Read poem →</a>
+            </article>
+
+            <article class="poem-card room-animate">
+              <span class="label">Section III · No. 09</span>
+              <h3>Before Spring Arrives</h3>
+              <p>Some loves are like seeds planted too early. The seed is good. The soil is good. But the season is wrong.</p>
+              <a href="poem.html?id=before-spring-arrives&from=room&room=love">Read poem →</a>
+            </article>
+          </div>
+          <div class="room-corridor room-animate">
+            <a href="#becoming-room">Continue into The Becoming Room <span class="corridor-arrow">→</span></a>
+          </div>
+        </section>
+
+        <!-- 4. The Becoming Room -->
+        <section id="becoming-room" class="room-spot becoming">
+          <div class="room-spot-header room-animate">
+            <span class="room-wing-badge">The Threshold · Room 04 · The Hallway Before Dawn</span>
+            <h2>The Becoming Room</h2>
+            <p class="room-vignette">
+              “A hallway where the doors stand half-open to the morning air. You do not need all the answers
+              to take the next step.”
+            </p>
+          </div>
+
+          <div class="poem-list">
+            <article class="poem-card room-animate">
+              <span class="label">Section III · No. 07</span>
+              <h3>A Life Filled with Almost</h3>
+              <p>Almost is not the end of the story. Because even a life filled with almost still holds a moment—one breath, one step, one chance—to finally become enough.</p>
+              <a href="poem.html?id=a-life-filled-with-almost&from=room&room=becoming">Read poem →</a>
+            </article>
+
+            <article class="poem-card room-animate">
+              <span class="label">Section IV · No. 10</span>
+              <h3>The Bridge Still Being Built</h3>
+              <p>Perhaps maturity is not about certainty at all. Perhaps it is simply the willingness to continue moving forward despite confusion, despite doubt.</p>
+              <a href="poem.html?id=the-bridge-still-being-built&from=room&room=becoming">Read poem →</a>
+            </article>
+          </div>
+          <div class="room-corridor room-animate">
+            <a href="#light-room">Continue into The Light Room <span class="corridor-arrow">→</span></a>
+          </div>
+        </section>
+
+        <!-- 5. The Light Room -->
+        <section id="light-room" class="room-spot light">
+          <div class="room-spot-header room-animate">
+            <span class="room-wing-badge">The Solarium · Room 05 · The Morning Window</span>
+            <h2>The Light Room</h2>
+            <p class="room-vignette">
+              “Sunlight gathers across worn wooden floorboards. After every long night, grace returns dressed
+              in ordinary, faithful things.”
+            </p>
+          </div>
+
+          <div class="poem-list">
+            <article class="poem-card room-animate">
+              <span class="label">Section IV · No. 11</span>
+              <h3>The Woman Who Keeps Going</h3>
+              <p>Because there is nothing small about a mother who keeps her family alive with faith, sacrifice, and hands that refuse to give up.</p>
+              <a href="poem.html?id=the-woman-who-keeps-going&from=room&room=light">Read poem →</a>
+            </article>
+
+            <article class="poem-card epilogue-card room-animate">
+              <span class="label">Collection Epilogue</span>
+              <h3>A Final Page</h3>
+              <p>Perhaps we never really finish becoming. Perhaps we simply learn to carry what we cannot change while making room for what might still become.</p>
+              <a href="poem.html?id=the-woman-who-keeps-going&from=room&room=light">Read in Collection →</a>
+            </article>
+          </div>
+          <div class="room-corridor room-animate">
+            <a href="index.html">Return to the Parlor <span class="corridor-arrow">←</span></a>
+          </div>
+        </section>
+      </div>
+
+      <!-- ============================================== -->
+      <!-- VIEW 2: THE LITERARY COLLECTION (THE BOOK)     -->
+      <!-- ============================================== -->
+      <div id="collection-view" class="perspective-content" role="tabpanel" aria-labelledby="tabCollection">
+        <div class="section-heading">
+          <span class="kicker">Collection I · Issue 001</span>
+          <h2>Things We Carry</h2>
+          <p>
+            Stories, poems, and quiet truths for the hearts still learning how to say what they feel.
+          </p>
+          <div class="collection-actions-bar">
+            <a
+              class="button-secondary"
+              href="Poem_Parlor_Collection_I_Things_We_Carry (1).pdf"
+              target="_blank"
+              rel="noopener"
+            >
+              Read / Download Authoritative PDF
+            </a>
+          </div>
+        </div>
+
+        <!-- Prologue Card -->
+        <section class="collection-bookend prologue-card">
+          <span class="kicker">Prologue</span>
+          <h3>A Note Before the First Page</h3>
+          <p>
+            Some things are carried quietly.<br />
+            A memory. A question. A person. A dream. A life that did not turn out exactly as expected.<br />
+            Poem Parlor was made for those things—the feelings that do not always know how to introduce themselves, but somehow recognize us when we read them.<br />
+            This is Collection I.<br />
+            A room for the things we carry.
+          </p>
+        </section>
+
+        <!-- Section I -->
+        <section id="the-things-we-carry" class="collection-section">
+          <div class="collection-section-header">
+            <div class="section-number">Section I</div>
+            <h2>The Things We Carry</h2>
+            <p class="section-epigraph">“Some burdens are invisible until someone finally gives them a name.”</p>
+          </div>
+
+          <div class="poem-list">
+            <article class="poem-card">
+              <span class="label">No. 01 · The Quiet Room</span>
+              <h3>Lost in Thought</h3>
+              <p>A thought begins quietly. No louder than a drop of rain touching the surface of a lake.</p>
+              <a href="poem.html?id=lost-in-thought&from=collection">Read poem →</a>
+            </article>
+
+            <article class="poem-card">
+              <span class="label">No. 02 · The Quiet Room</span>
+              <h3>The Man Who Never Complained</h3>
+              <p>Because nobody really knows what to do with pain so I learned to carry mine quietly.</p>
+              <a href="poem.html?id=the-man-who-never-complained&from=collection">Read poem →</a>
+            </article>
+
+            <article class="poem-card">
+              <span class="label">No. 03 · The Quiet Room</span>
+              <h3>Somewhere Behind His Silence</h3>
+              <p>Somewhere behind his silence, he is still walking away in places no one can see.</p>
+              <a href="poem.html?id=somewhere-behind-his-silence&from=collection">Read poem →</a>
+            </article>
+          </div>
+        </section>
+
+        <!-- Section II -->
+        <section id="the-people-we-lose" class="collection-section">
+          <div class="collection-section-header">
+            <div class="section-number">Section II</div>
+            <h2>The People We Lose</h2>
+            <p class="section-epigraph">“Some people leave the world. Others leave our lives. Both leave rooms behind.”</p>
+          </div>
+
+          <div class="poem-list">
+            <article class="poem-card">
+              <span class="label">No. 04 · The Memory Room</span>
+              <h3>The Empty Chair</h3>
+              <p>Some spaces are not made empty by furniture. They are made empty by people.</p>
+              <a href="poem.html?id=the-empty-chair&from=collection">Read poem →</a>
+            </article>
+
+            <article class="poem-card">
+              <span class="label">No. 05 · The Memory Room</span>
+              <h3>The Picture He Couldn't Call</h3>
+              <p>The number still exists. The memories still exist. The pictures still exist. But the person is gone.</p>
+              <a href="poem.html?id=the-picture-he-couldnt-call&from=collection">Read poem →</a>
+            </article>
+
+            <article class="poem-card">
+              <span class="label">No. 06 · The Memory Room</span>
+              <h3>Shakespeare and the World</h3>
+              <p>Even when people walk different roads, the moments you shared can still remain a place you both once called home.</p>
+              <a href="poem.html?id=shakespeare-and-the-world&from=collection">Read poem →</a>
+            </article>
+          </div>
+        </section>
+
+        <!-- Section III -->
+        <section id="the-lives-we-almost-lived" class="collection-section">
+          <div class="collection-section-header">
+            <div class="section-number">Section III</div>
+            <h2>The Lives We Almost Lived</h2>
+            <p class="section-epigraph">“There are versions of ourselves that exist only in the places we were too afraid to go.”</p>
+          </div>
+
+          <div class="poem-list">
+            <article class="poem-card">
+              <span class="label">No. 07 · The Becoming Room</span>
+              <h3>A Life Filled with Almost</h3>
+              <p>Almost is not the end of the story. Because even a life filled with almost still holds a moment—one breath, one step, one chance—to finally become enough.</p>
+              <a href="poem.html?id=a-life-filled-with-almost&from=collection">Read poem →</a>
+            </article>
+
+            <article class="poem-card">
+              <span class="label">No. 08 · The Love Room</span>
+              <h3>The Chapter We Couldn't Finish</h3>
+              <p>For some people enter a story not to stay until the final page, but to leave a mark so deep that every page afterward carries a trace of them.</p>
+              <a href="poem.html?id=the-chapter-we-couldnt-finish&from=collection">Read poem →</a>
+            </article>
+
+            <article class="poem-card">
+              <span class="label">No. 09 · The Love Room</span>
+              <h3>Before Spring Arrives</h3>
+              <p>Some loves are like seeds planted too early. The seed is good. The soil is good. But the season is wrong.</p>
+              <a href="poem.html?id=before-spring-arrives&from=collection">Read poem →</a>
+            </article>
+          </div>
+        </section>
+
+        <!-- Section IV -->
+        <section id="keep-going" class="collection-section">
+          <div class="collection-section-header">
+            <div class="section-number">Section IV</div>
+            <h2>Keep Going</h2>
+            <p class="section-epigraph">“Perhaps becoming is simply refusing to stop.”</p>
+          </div>
+
+          <div class="poem-list">
+            <article class="poem-card">
+              <span class="label">No. 10 · The Becoming Room</span>
+              <h3>The Bridge Still Being Built</h3>
+              <p>Perhaps maturity is not about certainty at all. Perhaps it is simply the willingness to continue moving forward despite confusion, despite doubt.</p>
+              <a href="poem.html?id=the-bridge-still-being-built&from=collection">Read poem →</a>
+            </article>
+
+            <article class="poem-card">
+              <span class="label">No. 11 · The Light Room</span>
+              <h3>The Woman Who Keeps Going</h3>
+              <p>Because there is nothing small about a mother who keeps her family alive with faith, sacrifice, and hands that refuse to give up.</p>
+              <a href="poem.html?id=the-woman-who-keeps-going&from=collection">Read poem →</a>
+            </article>
+          </div>
+        </section>
+
+        <!-- Epilogue Card -->
+        <section class="collection-bookend epilogue-card">
+          <span class="kicker">Epilogue</span>
+          <h3>A Final Page</h3>
+          <p>
+            Perhaps we never really finish becoming.<br />
+            Perhaps we simply learn to carry what we cannot change while making room for what might still become.
+          </p>
+        </section>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="site-shell footer-inner">
+        <div>Poem Parlor · Things We Carry (Collection I)</div>
+        <nav aria-label="Footer navigation">
+          <a href="index.html">The Parlor</a>
+          <a href="poems.html#rooms-view">Rooms</a>
+          <a href="poems.html#collection-view">The Collection</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="about.html">About</a>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>

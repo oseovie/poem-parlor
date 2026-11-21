@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Read poems from Collection I: Things We Carry in Poem Parlor's paper-like literary reading space."
+    />
+    <title>Poem Reader | Poem Parlor</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/poems-data.js"></script>
+    <script src="js/script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-nav">
+      <div class="site-shell">
+        <a class="brand" href="index.html">Poem Parlor</a>
+        <nav aria-label="Main navigation">
+          <ul class="nav-links">
+            <li><a href="index.html">The Parlor</a></li>
+            <li><a href="poems.html#rooms-view">Explore the Rooms</a></li>
+            <li><a href="poems.html#collection-view">The Collection</a></li>
+            <li><a href="index.html#word-door">Word Door</a></li>
+            <li><a href="gallery.html">The Gallery</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="reading-page site-shell">
+      <article class="poem-paper" id="poemPaper" aria-label="Poem reading parchment">
+        <div class="meta" id="readerMeta">
+          <span id="readerSectionBadge">Collection I · Section I: The Things We Carry</span>
+          <span id="readerRoomBadge">The Quiet Room</span>
+        </div>
+
+        <div class="reader-header">
+          <span class="poem-number-kicker" id="readerNumberKicker">NO. 01</span>
+          <h2 id="readerTitle">Lost in Thought</h2>
+          <p class="reader-epigraph" id="readerEpigraph">“Some burdens are invisible until someone finally gives them a name.”</p>
+        </div>
+
+        <div class="poem-body" id="readerBody">
+          <!-- Populated dynamically by script.js using POEM_PARLOR_DATA -->
+          <p>A thought begins quietly.<br />No louder than a drop of rain<br />touching the surface of a lake.</p>
+          <p>It arrives without warning,<br />and before long,<br />the mind is following it.</p>
+        </div>
+
+        <nav class="poem-pagination" id="readerPagination" aria-label="Collection page navigation">
+          <a class="pagination-link prev" id="readerPrevLink" href="#">
+            <span class="arrow">◂</span>
+            <span class="nav-text">
+              <small>Turn back</small>
+              <span id="readerPrevTitle">Previous Poem</span>
+            </span>
+          </a>
+          <span class="pagination-center" id="readerCounter">Folio 01 of 11</span>
+          <a class="pagination-link next" id="readerNextLink" href="#">
+            <span class="nav-text">
+              <small>Turn page</small>
+              <span id="readerNextTitle">Next Poem</span>
+            </span>
+            <span class="arrow">▸</span>
+          </a>
+        </nav>
+
+        <div class="page-actions" id="readerActions">
+          <a class="button-primary" id="readerReturnRoomBtn" href="poems.html#quiet-room">Return to Room</a>
+          <a class="button-secondary" id="readerReturnCollectionBtn" href="poems.html#the-things-we-carry">Return to Collection</a>
+          <a class="button-secondary" href="index.html">Back to Parlor</a>
+        </div>
+      </article>
+    </main>
+
+    <footer class="footer">
+      <div class="site-shell footer-inner">
+        <div>Poem Parlor · Things We Carry (Collection I)</div>
+        <nav aria-label="Footer navigation">
+          <a href="index.html">The Parlor</a>
+          <a href="poems.html#rooms-view">Rooms</a>
+          <a href="poems.html#collection-view">The Collection</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="about.html">About</a>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>

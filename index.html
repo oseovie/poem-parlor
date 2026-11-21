@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Poem Parlor is an atmospheric digital literary house of poems, reflections, and emotional rooms. Discover Collection I: Things We Carry."
+    />
+    <title>Poem Parlor | Things We Carry</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/poems-data.js"></script>
+    <script src="js/script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-nav">
+      <div class="site-shell">
+        <a class="brand" href="index.html">Poem Parlor</a>
+        <nav aria-label="Main navigation">
+          <ul class="nav-links">
+            <li><a href="index.html" class="active">The Parlor</a></li>
+            <li><a href="poems.html#rooms-view">Explore the Rooms</a></li>
+            <li><a href="poems.html#collection-view">The Collection</a></li>
+            <li><a href="#word-door">Word Door</a></li>
+            <li><a href="gallery.html">The Gallery</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- Atmospheric Entrance / Hero -->
+      <section class="hero">
+        <div class="site-shell hero-grid">
+          <div class="hero-copy">
+            <span class="kicker">Poem Parlor · Literary House</span>
+            <h1>Where words find a home.</h1>
+            <p class="strapline">Some things are easier to write than to say.</p>
+            <p class="entrance-narrative">
+              Step across the threshold into rooms carved from quietness, memory, and unspoken truths.
+              Inside, five rooms shelter eleven poems from <em>Collection I: Things We Carry</em>.
+            </p>
+            <div class="hero-actions">
+              <a class="button-primary" href="#word-door">Open a Word Door</a>
+              <a class="button-secondary" href="poems.html#rooms-view">Wander the Rooms</a>
+              <a class="button-secondary" href="poems.html#collection-view">Read Collection I</a>
+            </div>
+          </div>
+
+          <div class="parlor-scene" aria-label="An atmospheric literary parlor scene">
+            <div class="ceiling-light" aria-hidden="true"></div>
+            <div class="window" aria-hidden="true"></div>
+            <div class="wall-frame" aria-hidden="true"></div>
+            <div class="bookshelf" aria-hidden="true">
+              <div class="book-stack">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+            <div class="houseplant" aria-hidden="true"><span></span><span></span><span></span></div>
+            <div class="rug" aria-hidden="true"></div>
+            <div class="desk" aria-hidden="true"></div>
+            <div class="letter" aria-label="letter on desk">
+              <small>Collection I · Issue 001</small>
+              <p>
+                “Written for the hearts still learning how to say what they feel.”
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Signature Interaction: The Word Door (Gateway to the Rooms) -->
+      <section class="section word-door-section" id="word-door">
+        <div class="site-shell">
+          <div class="section-heading">
+            <span class="kicker">The Word Door · Gateway to the House</span>
+            <h2>Turn the latch. Step into the rooms.</h2>
+            <p>
+              The threshold of Poem Parlor. Opening the door reveals the five emotional chambers
+              sheltering the poems of <em>Collection I: Things We Carry</em>.
+            </p>
+          </div>
+
+          <div class="door-shell" id="doorShell" aria-live="polite">
+            <!-- The Door (Closed State with Latch Interaction Cue) -->
+            <button
+              class="door-trigger"
+              id="doorTrigger"
+              type="button"
+              aria-expanded="false"
+              aria-controls="doorReveal"
+              aria-label="Turn the latch to open the Word Door and enter the rooms"
+            >
+              <div class="door-face">
+                <span class="door-inscription">The Word Door</span>
+
+                <div class="door-latch-assembly" aria-hidden="true">
+                  <div class="door-escutcheon">
+                    <svg class="door-keyhole-icon" viewBox="0 0 24 24" width="22" height="22" fill="none">
+                      <circle cx="12" cy="8.5" r="3.2" stroke="currentColor" stroke-width="1.8" />
+                      <path d="M10 11.2L8.5 19H15.5L14 11.2" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" />
+                    </svg>
+                  </div>
+                  <div class="door-handle-lever"></div>
+                </div>
+
+                <div class="door-hint-tag">
+                  <span class="hint-pulse" aria-hidden="true"></span>
+                  <span class="hint-text">Turn the latch · Enter the rooms</span>
+                  <span class="hint-arrow" aria-hidden="true">→</span>
+                </div>
+              </div>
+            </button>
+
+            <!-- The Interior Revealed Beyond the Door -->
+            <div class="door-reveal" id="doorReveal">
+              <div class="door-foyer" id="doorFoyer">
+                <div class="foyer-banner">
+                  <div class="foyer-kicker">Beyond the Threshold · Five Chambers of the House</div>
+                  <h3 class="foyer-title">Choose a room to enter.</h3>
+                  <p class="foyer-desc">
+                    Each space holds its own silence, its own light, and its own poems from
+                    <em>Things We Carry</em>.
+                  </p>
+                </div>
+
+                <div class="foyer-rooms-grid">
+                  <!-- 1. The Quiet Room -->
+                  <article class="foyer-room-card quiet" data-room="quiet">
+                    <div class="foyer-card-inner">
+                      <span class="foyer-wing-badge">North Wing · Room 01</span>
+                      <h4 class="foyer-room-title">The Quiet Room</h4>
+                      <span class="foyer-descriptor">Stillness &amp; Solitude</span>
+                      <p class="foyer-vignette">
+                        “Where time forgets how to rush, and silence learns to speak.”
+                      </p>
+                      <div class="foyer-poems-meta">
+                        <span class="foyer-poem-count">3 Poems Sheltered:</span>
+                        <span class="foyer-poem-names">Lost in Thought · The Man Who Never Complained · Somewhere Behind His Silence</span>
+                      </div>
+                      <a class="foyer-enter-link" href="poems.html#quiet-room">
+                        <span>Enter this room</span>
+                        <span class="foyer-link-arrow">→</span>
+                      </a>
+                    </div>
+                  </article>
+
+                  <!-- 2. The Memory Room -->
+                  <article class="foyer-room-card memory" data-room="memory">
+                    <div class="foyer-card-inner">
+                      <span class="foyer-wing-badge">East Wing · Room 02</span>
+                      <h4 class="foyer-room-title">The Memory Room</h4>
+                      <span class="foyer-descriptor">The Archive of Years</span>
+                      <p class="foyer-vignette">
+                        “Photographs rest in open drawers; what is gone remains kept.”
+                      </p>
+                      <div class="foyer-poems-meta">
+                        <span class="foyer-poem-count">3 Poems Sheltered:</span>
+                        <span class="foyer-poem-names">The Empty Chair · The Picture He Couldn't Call · Shakespeare and the World</span>
+                      </div>
+                      <a class="foyer-enter-link" href="poems.html#memory-room">
+                        <span>Enter this room</span>
+                        <span class="foyer-link-arrow">→</span>
+                      </a>
+                    </div>
+                  </article>
+
+                  <!-- 3. The Love Room -->
+                  <article class="foyer-room-card love" data-room="love">
+                    <div class="foyer-card-inner">
+                      <span class="foyer-wing-badge">South Chamber · Room 03</span>
+                      <h4 class="foyer-room-title">The Love Room</h4>
+                      <span class="foyer-descriptor">The Hearth of Unsaid Things</span>
+                      <p class="foyer-vignette">
+                        “A patient warmth that asks for nothing more than honesty.”
+                      </p>
+                      <div class="foyer-poems-meta">
+                        <span class="foyer-poem-count">2 Poems Sheltered:</span>
+                        <span class="foyer-poem-names">The Chapter We Couldn't Finish · Before Spring Arrives</span>
+                      </div>
+                      <a class="foyer-enter-link" href="poems.html#love-room">
+                        <span>Enter this room</span>
+                        <span class="foyer-link-arrow">→</span>
+                      </a>
+                    </div>
+                  </article>
+
+                  <!-- 4. The Becoming Room -->
+                  <article class="foyer-room-card becoming" data-room="becoming">
+                    <div class="foyer-card-inner">
+                      <span class="foyer-wing-badge">The Threshold · Room 04</span>
+                      <h4 class="foyer-room-title">The Becoming Room</h4>
+                      <span class="foyer-descriptor">The Hallway Before Dawn</span>
+                      <p class="foyer-vignette">
+                        “Doors stand half-open to morning; courage to take the next step.”
+                      </p>
+                      <div class="foyer-poems-meta">
+                        <span class="foyer-poem-count">2 Poems Sheltered:</span>
+                        <span class="foyer-poem-names">A Life Filled with Almost · The Bridge Still Being Built</span>
+                      </div>
+                      <a class="foyer-enter-link" href="poems.html#becoming-room">
+                        <span>Enter this room</span>
+                        <span class="foyer-link-arrow">→</span>
+                      </a>
+                    </div>
+                  </article>
+
+                  <!-- 5. The Light Room -->
+                  <article class="foyer-room-card light" data-room="light">
+                    <div class="foyer-card-inner">
+                      <span class="foyer-wing-badge">The Solarium · Room 05</span>
+                      <h4 class="foyer-room-title">The Light Room</h4>
+                      <span class="foyer-descriptor">The Solarium &amp; Morning Window</span>
+                      <p class="foyer-vignette">
+                        “Sunlight across worn boards; grace dressed in faithful things.”
+                      </p>
+                      <div class="foyer-poems-meta">
+                        <span class="foyer-poem-count">1 Poem &amp; Epilogue:</span>
+                        <span class="foyer-poem-names">The Woman Who Keeps Going · A Final Page</span>
+                      </div>
+                      <a class="foyer-enter-link" href="poems.html#light-room">
+                        <span>Enter this room</span>
+                        <span class="foyer-link-arrow">→</span>
+                      </a>
+                    </div>
+                  </article>
+                </div>
+
+                <div class="foyer-actions-bar">
+                  <a class="button-secondary" href="poems.html#rooms-view">Wander the entire house in sequence →</a>
+                  <button type="button" class="close-door-btn" id="doorCloseBtn">Close the door ✕</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Featured Collection Spotlight -->
+      <section class="section collection-spotlight" id="collection-feature">
+        <div class="site-shell">
+          <div class="spotlight-card">
+            <div class="spotlight-content">
+              <span class="kicker">The Complete Literary Collection</span>
+              <h2>Things We Carry</h2>
+              <p class="spotlight-sub">Collection I · Issue 001</p>
+              <p class="spotlight-quote">
+                “Stories, poems, and quiet truths for the hearts still learning how to say what they feel.”
+              </p>
+              <div class="spotlight-sections-list">
+                <span><strong>I.</strong> The Things We Carry</span>
+                <span><strong>II.</strong> The People We Lose</span>
+                <span><strong>III.</strong> The Lives We Almost Lived</span>
+                <span><strong>IV.</strong> Keep Going</span>
+              </div>
+              <div class="hero-actions">
+                <a class="button-primary" href="poems.html#collection-view">Read Collection Cover to Cover</a>
+                <a
+                  class="button-secondary"
+                  href="Poem_Parlor_Collection_I_Things_We_Carry (1).pdf"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  Download Original PDF
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- The Gallery Preview: The Visual Archive -->
+      <section class="section" id="gallery-preview">
+        <div class="site-shell">
+          <div class="section-heading">
+            <span class="kicker">The Visual Archive</span>
+            <h2>The World Inside the Words.</h2>
+            <p>
+              A visual companion to <em>Things We Carry</em>. Every image tells part of the story
+              behind its poem.
+            </p>
+          </div>
+
+          <div class="archive-grid archive-preview-grid">
+            <!-- The Empty Chair -->
+            <article class="archive-card memory" data-room="memory">
+              <div class="archive-image-wrap">
+                <img
+                  src="images/gallery/04-the-empty-chair.jpg"
+                  alt="A single empty wooden chair by a window with a folded blanket and reading glasses nearby"
+                  loading="lazy"
+                />
+              </div>
+              <div class="archive-card-content">
+                <div class="archive-meta">
+                  <span class="archive-room-tag">The Memory Room</span>
+                  <span class="archive-section-tag">Section II · No. 04</span>
+                </div>
+                <h3>The Empty Chair</h3>
+                <p class="archive-caption">
+                  “Some spaces are not made empty by furniture. They are made empty by people.”
+                </p>
+                <a class="archive-link" href="poem.html?id=the-empty-chair&amp;from=gallery">Read the poem →</a>
+              </div>
+            </article>
+
+            <!-- The Bridge Still Being Built -->
+            <article class="archive-card becoming" data-room="becoming">
+              <div class="archive-image-wrap">
+                <img
+                  src="images/gallery/10-the-bridge-still-being-built.jpg"
+                  alt="A solitary person walking forward across a weathered wooden bridge disappearing into thick fog"
+                  loading="lazy"
+                />
+              </div>
+              <div class="archive-card-content">
+                <div class="archive-meta">
+                  <span class="archive-room-tag">The Becoming Room</span>
+                  <span class="archive-section-tag">Section IV · No. 10</span>
+                </div>
+                <h3>The Bridge Still Being Built</h3>
+                <p class="archive-caption">
+                  “Perhaps courage is not confidence, but persistence.”
+                </p>
+                <a class="archive-link" href="poem.html?id=the-bridge-still-being-built&amp;from=gallery">Read the poem →</a>
+              </div>
+            </article>
+
+            <!-- The Woman Who Keeps Going -->
+            <article class="archive-card light" data-room="light">
+              <div class="archive-image-wrap">
+                <img
+                  src="images/gallery/11-the-woman-who-keeps-going.jpg"
+                  alt="A mother sitting alone at a kitchen table late at night, calculator and bills before her, school uniforms folded nearby"
+                  loading="lazy"
+                />
+              </div>
+              <div class="archive-card-content">
+                <div class="archive-meta">
+                  <span class="archive-room-tag">The Light Room</span>
+                  <span class="archive-section-tag">Section IV · No. 11</span>
+                </div>
+                <h3>The Woman Who Keeps Going</h3>
+                <p class="archive-caption">
+                  “Because there is nothing small about a mother who keeps her family alive with faith and sacrifice.”
+                </p>
+                <a class="archive-link" href="poem.html?id=the-woman-who-keeps-going&amp;from=gallery">Read the poem →</a>
+              </div>
+            </article>
+          </div>
+
+          <div class="hero-actions gallery-inline-actions">
+            <a class="button-secondary" href="gallery.html">Explore the Full Archive (11 Plates) →</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Teaser -->
+      <section class="section" id="about">
+        <div class="site-shell">
+          <div class="section-heading">
+            <span class="kicker">About</span>
+            <h2>A place for the words that need a room.</h2>
+          </div>
+
+          <div class="story-panel">
+            <p>
+              Poem Parlor was built for the feeling that arrives before speech: the ache, the awe,
+              the tenderness, the pause. It is a digital literary house where poems live in rooms,
+              letters rest at the windowsill, and memories keep their own soft light.
+            </p>
+            <p>
+              This is not a conventional blog. It is a small world meant to be wandered slowly,
+              quietly, and with attention.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="site-shell footer-inner">
+        <div>Poem Parlor · Things We Carry (Collection I)</div>
+        <nav aria-label="Footer navigation">
+          <a href="index.html">The Parlor</a>
+          <a href="poems.html#rooms-view">Rooms</a>
+          <a href="poems.html#collection-view">The Collection</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="about.html">About</a>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>
